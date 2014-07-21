@@ -15,11 +15,12 @@ require_once __DIR__.'/lib/gwa/huddle/ApiCallCached.class.php';
 require_once __DIR__.'/lib/gwa/huddle/Persistance.class.php';
 require_once __DIR__.'/lib/gwa/huddle/FrontEnd.class.php';
 require_once __DIR__.'/lib/gwa/huddle/Admin.class.php';
-require_once(__DIR__.'/lib/gwa/huddle/Document.class.php');
+require_once __DIR__.'/lib/gwa/huddle/Document.class.php';
 
+$config = include(__DIR__.'config.php');
 $gwahuddleapi = new \gwa\huddle\Api(
-    'NewsroomGore-tex',
-    'http://gwadev.de/HuddleRedirect',
+    $config['clientid'],
+    $config['redirecturi'],
     __DIR__.'/cacert.pem'
 );
 $gwahuddlepersistance = new \gwa\huddle\Persistance(__DIR__.'/_data/data.json');

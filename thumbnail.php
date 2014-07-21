@@ -18,9 +18,10 @@ require_once __DIR__.'/lib/gwa/huddle/User.class.php';
 require_once __DIR__.'/lib/gwa/huddle/ThumbnailCached.class.php';
 
 $persistance = new \gwa\huddle\Persistance(__DIR__.'/_data/data.json');
-$api = new \gwa\huddle\Api(
-    'NewsroomGore-tex',
-    'http://gwadev.de/HuddleRedirect',
+$config = include(__DIR__.'config.php');
+$gwahuddleapi = new \gwa\huddle\Api(
+    $config['clientid'],
+    $config['redirecturi'],
     __DIR__.'/cacert.pem'
 );
 $user = \gwa\huddle\User::getUserInstance($persistance, $api);
@@ -38,5 +39,11 @@ $api->setToken($user->getAccessToken());
 // get document
 $uri = \gwa\huddle\Document::getDocumentURI($id);
 $document = \gwa\huddle\Document::getDocumentInstance($uri);
-$thumbnail = new \gwa\huddle\ThumbnailCached($api, __DIR__.'/_cache/thumbnails', $document);
-$thumbnail->output();
+
+if ($document) {
+	$thumbnail = new \gwa\huddle\ThumbnailCached($api, __DIR__.'/_cache/thumbnails', $document);
+	$thumbnail->output();
+} else {
+	header('Content-Type: image/jpeg');
+	readfile(__DIR__.'/assets/img/blank.jpg');
+}

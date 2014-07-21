@@ -18,9 +18,10 @@ require_once __DIR__.'/lib/gwa/huddle/User.class.php';
 require_once __DIR__.'/lib/gwa/huddle/Document.class.php';
 
 $persistance = new \gwa\huddle\Persistance(__DIR__.'/_data/data.json');
-$api = new \gwa\huddle\Api(
-    'NewsroomGore-tex',
-    'http://gwadev.de/HuddleRedirect',
+$config = include(__DIR__.'config.php');
+$gwahuddleapi = new \gwa\huddle\Api(
+    $config['clientid'],
+    $config['redirecturi'],
     __DIR__.'/cacert.pem'
 );
 $user = \gwa\huddle\User::getUserInstance($persistance, $api);
