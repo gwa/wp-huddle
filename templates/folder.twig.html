@@ -1,0 +1,25 @@
+<ul class="breadcrumb">
+	{# breadcrumb parents #}
+	{% for f in parents %}
+		{% if loop.index == 1 %}
+			<li class="home"><a href="?f={{ f.id }}">&nbsp;</a></li>
+		{% else %}
+			<li><a href="?f={{ f.id }}">{{ f.displayName|truncate(10) }}</a></li>
+		{% endif %}
+	{% endfor %}
+	{% if parents|length > 0 %}
+	{# only show folder name for subfolders #}
+	<li class="current">{{ folder.displayName }}</li>
+	{% endif %}
+</ul>
+
+<div class="gwa-huddle">
+	<ul class="documents">
+		{% for f in folder.folders  %}
+		<li>{% autoescape false %}{{ f.HTMLRepresentation }}{% endautoescape %}</li>
+		{% endfor %}
+		{% for d in folder.documents  %}
+		<li>{% autoescape false %}{{ d.HTMLRepresentation }}{% endautoescape %}</li>
+		{% endfor %}
+	</ul>
+</div>

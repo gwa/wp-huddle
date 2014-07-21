@@ -1,0 +1,53 @@
+{
+	"build_systems":
+	[
+		{
+			"cmd":
+			[
+				"grunt",
+				"--no-color"
+			],
+			"name": "grunt: default",
+			"path": "/usr/local/bin",
+			"variants":
+			[
+				{
+					"cmd":
+					[
+						"grunt",
+						"--no-color",
+						"cssmin"
+					],
+					"name": "grunt: cssmin",
+					"path": "/usr/local/bin"
+				}
+			]
+		},
+		{
+			"cmd":
+			[
+				"phpunit",
+				"tests"
+			],
+			"name": "phpunit: tests",
+			"path": "/usr/local/bin:/usr/bin",
+			"working_dir": "${project_path}"
+		}
+	],
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				"composer.lock",
+				"composer.phar"
+			],
+			"folder_exclude_patterns":
+			[
+				"node_modules"
+			],
+			"follow_symlinks": true,
+			"path": "."
+		}
+	]
+}

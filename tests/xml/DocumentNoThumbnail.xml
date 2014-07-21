@@ -1,0 +1,43 @@
+<document title="TPS report May 2010" description="relentlessly mundane and enervating.">
+  <link rel="self" href="files/documents/8655808" />
+  <link rel="parent" href="files/folders/12345" title="..."/>
+  <link rel="edit" href="..." />
+  <link rel="move" href="..." />
+  <link rel="delete" href="..." />
+  <link rel="content" href="https://api.huddle.net/files/documents/8655808/content" title="foobar.xls" type="application/excel" />
+  <link rel="lock" href="..." />
+  <link rel="version-history" href="..." />
+  <link rel="create-version" href="..." />
+  <link rel="comments" href="..." count="2" />
+  <link rel="approvals" href="..." />
+  <link rel="permissions" href="..." />
+  <link rel="share" href="..." />
+  <link rel="previews" href="..." />
+  <link rel="alternate" href="..." />
+  <link rel="alternate" href="..." type="text/html" />
+  <link rel="copy" href="..." />
+  <link rel="audittrail" href="..." />
+  <link rel="printed" href="..." />
+  <link rel="make-offline" href="..." />
+  <actor name="Peter Gibson" email="peter.gibson@example.com" rel="owner">
+    <link rel="self" href="..." />
+    <link rel="avatar" href="..." type="image/jpg" />
+    <link rel="alternate" href="..." type="text/html" />
+  </actor>
+  <actor name="Barry Potter" email="barry.potter@example.com" rel="updated-by">
+    <link rel="self" href="..." />
+    <link rel="avatar" href="..." type="image/jpg" />
+    <link rel="alternate" href="..." type="text/html" />
+  </actor>
+  <size>19475</size>
+  <version>98</version>
+  <created>2007-10-10T09:02:17Z</created>
+  <updated>2011-10-10T09:02:17Z</updated>
+  <processingStatus>Complete</processingStatus>
+  <views>9</views>
+  <workspace title="My workspace">
+    <link rel="self" href="..." />
+  </workspace>
+  <thumbnails>
+  </thumbnails>
+</document>

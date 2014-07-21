@@ -1,0 +1,30 @@
+<workspace xmlns="http://schema.huddle.net/2011/02/"
+           title="Infinite improbability drive"
+           description="Projects for stealing the infinite improbability drive"
+           type="shared">
+
+  <link rel="self"
+    href="http://www.example.com" />
+  <link
+    rel="documentLibrary"
+    href="http://www.example.com/folder/1234" />
+  <link
+    rel="changes"
+    href="..." />
+  <link
+    rel="workspaceMembers"
+    href="..." />
+  <link
+    rel="permissions"
+    href="..." />
+  <link
+    rel="assignee-approvals"
+    href="..." />
+
+  <settings>
+    <setting name="CanSync" value="true" />
+    <setting name="IsManager" value="true" />
+    <setting name="Status" value="Active" />
+  </settings>
+
+</workspace>

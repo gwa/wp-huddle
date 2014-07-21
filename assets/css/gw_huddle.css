@@ -1,0 +1,326 @@
+/* Front end CSS file for gw_huddle plugin */
+
+.gwa-huddle h3 {
+	margin: 0 0 30px 0;
+}
+
+.gwa-huddle ul {
+	list-style: none;
+	margin: 0 0 50px 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.gwa-huddle li {
+	float: left;
+	width: 20%;
+	position: relative;
+}
+
+.gwa-huddle li a {
+	display: block;
+	margin: 5px;
+	padding: 10px;
+	background: #fff;
+	border: 1px solid #fff;
+	height: 180px;
+	overflow: hidden;
+	font-size: 14px;
+	color: #333;
+	-webkit-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-ms-transition: all 0.5s linear;
+	-kthtml-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+}
+
+.gwa-huddle li a:hover {
+	border: 1px solid #aaa;
+	box-shadow: 0 2px 5px #ccc;
+	color: #f10700;
+	-webkit-transition: all 0.25s linear;
+	-o-transition: all 0.25s linear;
+	-moz-transition: all 0.25s linear;
+	-ms-transition: all 0.25s linear;
+	-kthtml-transition: all 0.25s linear;
+	transition: all 0.25s linear;
+}
+
+.gwa-huddle .media span {
+	display: block;
+	width: 100%;
+	height: 80px;
+	background: transparent url(img/sprite_media.png) 0 0 no-repeat;
+	margin: 0 0 5px 0;
+}
+
+.gwa-huddle .media.folder span {
+	background-position: 0 -80px;
+}
+
+.gwa-huddle .media.pdf span {
+	background-position: 0 -160px;
+}
+
+.gwa-huddle .media.doc span {
+	background-position: 0 -240px;
+}
+
+.gwa-huddle .media.xls span {
+	background-position: 0 -320px;
+}
+
+.gwa-huddle .media.zip span {
+	background-position: 0 -400px;
+}
+
+.gwa-huddle .media.ppt span {
+	background-position: 0 -480px;
+}
+
+.gwa-huddle .media span img {
+	width: 110px;
+	height: 80px;
+}
+
+.gwa-huddle .media.folder a {
+	font-weight: bold;
+}
+
+.gwa-huddle li em {
+	display: block;
+	font-style: normal;
+	font-size: 0.9em;
+	color: #999;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+	overflow: hidden;
+	color: #333;
+	text-transform: uppercase;
+	margin: 0 0 20px 0;
+	padding: 20px 0 0 0;
+	border-top: 1px solid #eeeeee;
+}
+
+.breadcrumb ul {
+	list-style: none;
+	width: 100%;
+	color: #333;
+
+}
+.breadcrumb li{
+	list-style-type: none;
+	float: left;
+	padding-right: 0.2em;
+	display: inline-block;
+}
+/* Breadcrumb Home Icon*/
+.breadcrumb li.home {
+	padding: 0;
+	margin: 0;
+}
+.breadcrumb li.home a {
+	width: 21px;
+	height: 21px;
+	display: block;
+	background: transparent url(img/icon_home.png) 0 0 no-repeat;
+	background-position: 0 -21px;
+}
+.breadcrumb li.home a:hover {
+	background-position: 0 -42px;
+}
+.breadcrumb a{
+	color: #f10700;
+}
+.breadcrumb a:hover{
+	color: #333;
+}
+.breadcrumb li:before {
+	content: ' / ';
+	padding: 0.4em;
+}
+.breadcrumb li:first-child:before {
+	content: ' ';
+	content: none;
+	display: block;
+}
+
+/* xs */
+@media (max-width: 767px){
+	.breadcrumb {
+		overflow: hidden;
+		color: #333;
+		text-transform: uppercase;
+		margin: 0 0 20px 0;
+		padding: 20px 0 0 0;
+		font-size: 14px;
+		border-top: 1px solid #eeeeee;
+	}
+	.breadcrumb ul {
+		width: 100%;
+		list-style: none;
+		color: #333;
+	}
+	.breadcrumb li {
+		width: 100%;
+		list-style-type: none;
+		padding-right: 0.2em;
+	}
+	.breadcrumb a {
+		display: inline-block;
+		color: #f10700;
+	}
+	.breadcrumb a:hover{
+		color: #333;
+	}
+	.breadcrumb li:before {
+		content: " ";
+		padding: 0;
+		margin: 0;
+	}
+	.breadcrumb li:first-child:before {
+		content: " ";
+		padding: 0;
+		margin: 0;
+	}
+	.breadcrumb:empty {
+		display: none;
+	}
+}
+
+
+/* Sidebar Downloads */
+.gwa-huddle-sidebar ul {
+	list-style: none;
+	margin: 0 0 0 0;
+	padding: 0;
+	overflow: hidden;
+	border-top: 1px solid #ddd;
+}
+.gwa-huddle-sidebar li {
+	border-bottom: 1px solid #ddd;
+	width: 100%;
+}
+
+.gwa-huddle-sidebar li a {
+	display: block;
+	margin: 0;
+	padding: 5px 0;
+	background: #fff;
+	height: auto;
+	overflow: hidden;
+	font-size: 14px;
+	color: #333;
+	border: 0;
+}
+
+.gwa-huddle-sidebar li a:hover {
+	color: #f10700;
+	border: 0;
+}
+.gwa-huddle-sidebar .media span {
+	display: block;
+	width: 26px;
+	height: 26px;
+	background: transparent url(img/sprite_media_small.png) 0 0 no-repeat;
+	margin: 0 5px 0 0;
+	float:left;
+}
+.gwa-huddle-sidebar .media.folder span { /*Missing Sprite*/
+	background-position: 0 0;
+}
+
+.gwa-huddle-sidebar .media.pdf span {
+	background-position: 0 0;
+}
+
+.gwa-huddle-sidebar .media.doc span {
+	background-position: 0 -26px;
+}
+
+.gwa-huddle-sidebar .media.xls span {
+	background-position: 0 -52px;
+}
+
+.gwa-huddle-sidebar .media.zip span {
+	background-position: 0 -52px; /*Missing Sprite*/
+}
+
+.gwa-huddle-sidebar .media.ppt span {
+	background-position: 0 -52px; /*Missing Sprite*/
+}
+.gwa-huddle-sidebar .media.file span img {
+	width: 26px;
+	height: 26px;
+	margin: 0 5px 0 0;
+}
+
+/* xs */
+@media (max-width: 767px){
+	.gwa-huddle ul {
+		list-style: none;
+		margin: 0 0 10px 0;
+		padding: 0;
+		overflow: hidden;
+		border-top: 1px solid #ddd;
+	}
+
+	.gwa-huddle li {
+		border-bottom: 1px solid #ddd;
+		width: 100%;
+	}
+	.gwa-huddle li a {
+		display: block;
+		margin: 0;
+		padding: 5px 0;
+		background: #fff;
+		height: auto;
+		overflow: hidden;
+		font-size: 14px;
+		color: #333;
+		border: 0;
+	}
+	.gwa-huddle li a:hover {
+		color: #f10700;
+		border: 0;
+	}
+	.gwa-huddle .media span {
+		display: block;
+		width: 26px;
+		height: 26px;
+		background: transparent url(img/sprite_media_small.png) 0 0 no-repeat;
+		margin: 0 5px 0 0;
+		float:left;
+	}
+	.gwa-huddle .media.folder span { /*Missing Sprite*/
+		background-position: 0 0;
+	}
+
+	.gwa-huddle .media.pdf span {
+		background-position: 0 0;
+	}
+
+	.gwa-huddle .media.doc span {
+		background-position: 0 -26px;
+	}
+
+	.gwa-huddle .media.xls span {
+		background-position: 0 -52px;
+	}
+
+	.gwa-huddle .media.zip span {
+		background-position: 0 -52px; /*Missing Sprite*/
+	}
+
+	.gwa-huddle .media.ppt span {
+		background-position: 0 -52px; /*Missing Sprite*/
+	}
+	.gwa-huddle .media.file span img {
+		width: 26px;
+		height: 26px;
+		margin: 0 5px 0 0;
+	}
+}

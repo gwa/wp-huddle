@@ -1,4 +1,4 @@
 wp-huddle
 =========
 
-Wordpress Huddle integration
+Huddle integration in WordPress.

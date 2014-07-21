@@ -1,0 +1,34 @@
+<folder xmlns="https://schema.huddle.net/2011/02/" title="My folder" displayName="My folder" description="Folder description">
+  <link rel="self" href="files/folders/12345" />
+  <link rel="parent" href="files/folders/12344" />
+  <link rel="delete" href="..." />
+  <link rel="bulk-delete" href="..." />
+  <link rel="bulk-move" href="..." />
+  <link rel="bulk-download" href="..." />
+  <link rel="edit" href="..." />
+  <link rel="move" href="..." />
+  <link rel="create-folder" href="..." />
+  <link rel="create-document" href="..." />
+  <link rel="permissions" href="..." />
+  <link rel="editPermissions" href="..." />
+  <link rel="workspace-summary" href="..." />
+  <link rel="share" href="..." />
+  <link rel="copy" href="..." />
+  <actors>
+    <actor name="Ian Cooper" email="ian.cooper@example.com" rel="owner">
+      <link rel="self" href="..." />
+    </actor>
+  </actors>
+  <folders>
+    <folder title="sub folder" description="my subfolder">
+        <link rel="self" href="..." />
+    </folder>
+  </folders>
+  <documents>
+    <document title="document title" description="document description">
+      <link rel="self" href="..." />
+    </document>
+  </documents>
+  <created>2007-10-10T09:02:17Z</created>
+  <updated>2007-01-01T00:02:03Z</updated>
+</folder>

@@ -1,0 +1,14 @@
+{% include 'incl/admin-options-header.twig.html' %}
+
+<a href="{{ authurl }}" class="button-primary">Authorize a Huddle user...</a>
+
+<p>- or -</p>
+
+<form method="get">
+	<label for="code">Enter a Huddle API auth code</label>
+	<div>
+		<input type="hidden" name="page" value="gwa-huddle-admin" />
+		<input type="text" name="code" />
+		<input class="button" type="submit" />
+	</div>
+</form>

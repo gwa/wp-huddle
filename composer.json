@@ -1,0 +1,10 @@
+{
+	"name": "gwa/wp-huddle",
+	"type": "wordpress-plugin",
+	"homepage": "https://github.com/gwa/wp-huddle",
+	"license": "MIT",
+    "require": {
+        "twig/twig": "1.*",
+        "twig/extensions": "1.0.*"
+    }
+}

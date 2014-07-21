@@ -1,0 +1,57 @@
+{% include 'incl/admin-options-header.twig.html' %}
+
+{% if workspace %}
+
+<p>Workspace: <strong>{{ workspace.displayName }}</strong> <a class="button" href="?page=gwa-huddle-admin&workspace=NULL&folder=NULL">deselect workspace</a></p>
+
+{% if folder %}
+	{% if folder.parent %}
+	<a href="?page=gwa-huddle-admin&folder={{ folder.parent.URI }}">&#8593; {{ folder.parent.displayName }}</a></td>
+	{% endif %}
+	<h3>Selected folder: {{ folder.displayName }}</h3>
+	<p>Contains following folders:</p>
+	<table class="widefat">
+		<tbody>
+			{% for f in folder.folders %}
+			<tr>
+				<td><a href="?page=gwa-huddle-admin&folder={{ f.URI }}">{{ f.displayName }}</a></td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+{% else %}
+	<table class="widefat">
+		<tbody>
+			{% for f in workspace.folder.folders %}
+			<tr>
+				<td><a href="?page=gwa-huddle-admin&folder={{ f.URI }}">{{ f.displayName }}</a></td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+{% endif %}
+
+{% else %}
+
+<h3>Workspaces</h3>
+
+<p>Choose a workspace to use as the "media" base folder:</p>
+
+<table class="widefat">
+	<tbody>
+		{% for workspace in user.workspaces %}
+		<tr>
+			<td><a href="?page=gwa-huddle-admin&workspace={{ workspace.URI }}">{{ workspace.displayName }}</a></td>
+		</tr>
+		{% endfor %}
+	</tbody>
+</table>
+
+{% endif %}
+
+<h3>Token status:</h3>
+
+<div class="updated">
+	<p>User: <strong>{{ user.displayName }}</strong></p>
+	<p>Token is <strong>{{ token_expired }}</strong>: expires in {{ token_expires_in }} seconds</p>
+</div>

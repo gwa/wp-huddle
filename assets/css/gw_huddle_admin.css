@@ -1,0 +1,139 @@
+#gwa-huddle {
+	border-color: #ccc;
+}
+
+#gwa-huddle h3.hndle {
+	background: #fff100 url(img/yellowstripe.png) no-repeat right center;
+}
+
+#gwa-huddle .handlediv {
+	color: #333;
+}
+
+#gwa-huddle .inside {
+	margin: 0;
+}
+
+.gwahuddle .tree {
+	padding: 15px;
+	border: 1px solid #ccc;
+	background: #fff;
+	box-shadow: 0 2px 5px #ddd;
+	border-radius: 4px;
+}
+
+.gwahuddle ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 30px 0;
+	overflow: hidden;
+}
+
+.gwahuddle li {
+	float: left;
+	width: 20%;
+	margin: 0;
+	overflow: hidden;
+}
+
+.gwahuddle li > div {
+	margin: 2px;
+	padding: 5px;
+	border: 1px solid #ccc;
+	height: 140px;
+	overflow: hidden;
+	position: relative;
+	background: #fff;
+	box-shadow: 0 2px 5px #ddd;
+	border-radius: 4px
+}
+
+.gwahuddle a.del {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: 20px;
+	height: 20px;
+	background: #fff100;
+	color: #333;
+}
+
+.gwahuddle a.del:before {
+	content: "\f335";
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	font: normal 20px/1 'dashicons';
+	vertical-align: top;
+}
+
+.gwahuddle a.folderup:before {
+	content: "\f340";
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	font: normal 20px/1 'dashicons';
+	vertical-align: top;
+}
+
+.gwahuddle li span {
+	display: block;
+	width: 100%;
+	height: 80px;
+	overflow: hidden;
+	margin-bottom: 5px;
+	background: url(img/sprite_media.png) no-repeat 0 0;
+	text-align: center;
+}
+
+.gwahuddle .folder span {
+	background-position: 0 -80px;
+}
+
+.gwahuddle .pdf span {
+	background-position: 0 -160px;
+}
+
+.gwahuddle .doc span {
+	background-position: 0 -240px;
+}
+
+.gwahuddle .xls span {
+	background-position: 0 -320px;
+}
+
+.gwahuddle .zip span {
+	background-position: 0 -400px;
+}
+
+.gwahuddle .ppt span {
+	background-position: 0 -480px;
+}
+
+.gwahuddle li span img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+.gwahuddle .tree li > div {
+	border: 1px solid #fff;
+	box-shadow: none;
+}
+
+.gwahuddle .workspaces li {
+	float: none;
+	width: auto;
+}
+
+.gwahuddle .workspaces li > div {
+	border: 0;
+	border-bottom: 1px solid #eee;
+	height: auto;
+	margin: 0;
+	box-shadow: none;
+	background: none;
+}
+
+.gwahuddle .loading {
+	padding-left: 25px;
+	background: url(img/ajax-loader.gif) no-repeat left center;
+}

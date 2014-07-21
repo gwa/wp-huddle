@@ -1,0 +1,75 @@
+<user xmlns="http://schema.huddle.net/2011/02/">
+  <link rel="alternate" type="text/html" href="..." />
+  <link rel="avatar" type="image/jpg" href="..." />
+  <link rel="self" href="http://www.example.com" />
+  <link rel="meetings" href="..." />
+  <link rel="approvals" href="..."/>
+  <link rel="friends" href="..."/>
+  <link rel="recommendations" href="..."/>
+  <link rel="notifications-unseen-count" href="..."/>
+  <link rel="notifications-received" href="..."/>
+  <link rel="offline-items" href="..."/>
+  <link rel="document-owned-approvals" href="..."/>
+  <link rel="assignee-approvals" href="..."/>
+  <link rel="locks-owned" href="..."/>
+
+  <membership>
+    <workspaces>
+
+      <workspace title="My wonderful workspace" type="shared">
+        <link rel="self" href="..." />
+        <link rel="documentLibrary" href="..." />
+        <link rel="assignee-approvals" href="..." />
+
+        <settings>
+          <setting name="CanSync" value="true" />
+          <setting name="IsManager" value="true" />
+          <setting name="Status" value="Active" />
+          <setting name="SomethingElse" value="foofoofoo" />
+        </settings>
+      </workspace>
+
+      <workspace title="My workspace" type="shared">
+        <link rel="self" href="..." />
+        <link rel="calendar" href="..." />
+        <link rel="documentLibrary" href="..." />
+        <link rel="assignee-approvals" href="..." />
+
+        <settings>
+          <setting name="CanSync" value="true" />
+          <setting name="IsManager" value="true" />
+          <setting name="Status" value="Active" />
+          <setting name="SomethingElse" value="foofoofoo" />
+        </settings>
+
+      </workspace>
+    </workspaces>
+  </membership>
+
+  <profile>
+
+    <personal>
+      <firstname>Ian</firstname>
+      <lastname>Cooper</lastname>
+      <displayname>Ian Cooper</displayname>
+    </personal>
+
+    <company name="Huddle" role="Senior developer">
+      <link rel="www" href="http://www.huddle.com" />
+    </company>
+
+    <contacts>
+      <contact rel="mail" href="..." />
+      <contact rel="telephone" href="..." />
+      <contact rel="mobile" href="..." />
+      <contact rel="skype" href="..." />
+      <contact rel="www" href="http://www.iancooper.name" />
+    </contacts>
+  </profile>
+
+  <internationalisation>
+    <timezone>Europe/London</timezone>
+    <utcOffset>60</utcOffset>
+    <languageCode>en-gb</languageCode>
+  </internationalisation>
+</user>
